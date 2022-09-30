@@ -3,6 +3,7 @@ import { AiFillDelete, AiFillEdit } from "react-icons/ai";
 import { useState, useRef, useEffect } from "react";
 import { Button, InputGroup, Form, Container, Row, Col } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Title from "./Title";
 
 const App = () => {
   //get data LS
@@ -49,23 +50,19 @@ const App = () => {
   const [lists, setLists] = useState(getDataFromLS());
   const [inputTask, setInputTask] = useState("");
   const inputRef = useRef();
+  // input focus
   useEffect(() => {
     inputRef.current.focus();
   });
 
   // edit form
   const [editForm, setEditForm] = useState(false);
-  // console.log(inputTask)
 
   return (
     <div className="App">
       <Container>
         {/*Heading  */}
-        <Row className="justify-content-center mb-5 text-center">
-          <Col sm={12} lg={8}>
-            <h1>TO DO LIST</h1>
-          </Col>
-        </Row>
+        <Title />
 
         {/* Input & Add btn */}
         <Row className="justify-content-center mb-5">
