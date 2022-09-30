@@ -3,9 +3,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { useState, useRef, useEffect } from "react";
 import { Container } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Title from "./Title";
-import Input from "./Input";
-import Lists from "./Lists";
+import Title from "./Components/Title";
+import Input from "./Components/Input";
+import Lists from "./Components/Lists";
 
 const App = () => {
   //get data LS
