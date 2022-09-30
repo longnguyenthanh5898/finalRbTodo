@@ -1,31 +1,42 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-.App{
+.App {
   padding: 40px;
 }
-.complete{
+.complete {
   text-decoration: line-through;
   color: rgb(234, 15, 48);
-  
 }
-.edit-icon{
-  color:  green;
+.edit-icon {
+  color: green;
   font-size: 32px;
-  
 }
-.delete-icon{
-  color:  red;
+.delete-icon {
+  color: red;
   font-size: 32px;
-  
+}
+
+@media only screen and (max-width: 600px) {
+  .edit-btn {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .delete-btn {
+    display: flex;
+    justify-content: flex-end;
+    border-top: 1px solid rgb(192, 187, 187);
+  }
+  .task-container {
+  }
 }

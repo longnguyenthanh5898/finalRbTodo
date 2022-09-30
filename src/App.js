@@ -45,7 +45,8 @@ const App = () => {
   // handleEdit
   const handleEdit = (task, id) => {
     setEditForm(true);
-    setInputTask(task);
+    setInputTask(lists[id].task);
+    console.log(task);
     setId(id);
   };
 
